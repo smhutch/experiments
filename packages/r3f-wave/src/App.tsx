@@ -1,4 +1,4 @@
-import React, { ComponentPropsWithRef, Suspense, useRef } from "react";
+import React, { Suspense, useRef } from "react";
 import { DoubleSide, ShaderMaterial, Texture, TextureLoader } from "three";
 import {
   Canvas,
@@ -7,12 +7,7 @@ import {
   useFrame,
   useLoader,
 } from "@react-three/fiber";
-import {
-  OrbitControls,
-  OrthographicCamera,
-  PerspectiveCamera,
-  shaderMaterial,
-} from "@react-three/drei";
+import { OrbitControls, shaderMaterial } from "@react-three/drei";
 
 import fragmentShader from "./shaders/fragment.glsl";
 import vertexShader from "./shaders/vertex.glsl";
