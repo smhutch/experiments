@@ -45,3 +45,7 @@ await fs.writeFile(
 console.log(chalk.blueBright(`-- updating README.md`));
 const readmePath = `${packagePath}/README.md`;
 await fs.writeFile(readmePath, withEol(`# ${experimentName}`));
+
+// Remove yarn.lock from the package, since we're using it in a yarn workspace now
+console.log(chalk.blueBright(`-- removing yarn.lock`));
+await $`rm ${packagePath}/yarn.lock`;
