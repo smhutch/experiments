@@ -8,6 +8,13 @@
 ## Scripts
 
 ```bash
+# Create a new experiment
+yarn scaffold
+```
+
+## Package scripts
+
+```bash
 # Run dev server
 yarn workspace {package} dev
 

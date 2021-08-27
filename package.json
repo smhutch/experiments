@@ -5,5 +5,8 @@
   ],
   "devDependencies": {
     "zx": "^3.1.0"
+  },
+  "scripts": {
+    "scaffold": "node mgmt/new-experiment.mjs"
   }
 }
